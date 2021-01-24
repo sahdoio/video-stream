@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "90393fa4-0fb9-4be7-b7c0-eb837cfa0618",
+		"name": "Jwe Encrypter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Encrypt Payload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\": {\r\n        \"name\": \"User Name\",\r\n        \"email\": \"test@tes.com\",\r\n        \"phone\": \"5511999999999\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/jwe/encrypt",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"jwe",
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dencrypt Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..aWxJemYIY-cU2AkJDCFAsg.KIvUqwd9slxEADRLoFHFKMfz_Lsl9wCWoi5SQe3jEJu_xzh9wi4FDLaA9aiDsiuwoDqvgrTsZ0knuhqhFHjMlOf5PvRloxPq22ZZCDyM_S6fyyBNuXxqY8g0D3sDbrRd.LHw9-BYETsnRCW8QyvAa4Q\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/jwe/decrypt",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"jwe",
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000"
+		}
+	]
+}

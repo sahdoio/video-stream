@@ -1,0 +1,17 @@
+server {
+    listen [::]:80;
+    listen 80;
+
+    server_name mdf.sahdo.me;
+
+    location / {
+        proxy_pass http://127.0.0.1:8085;
+    }
+
+    # listen [::]:443 ssl; # managed by Certbot
+    # listen 443 ssl; # managed by Certbot
+    # ssl_certificate /etc/letsencrypt/live/my.hintify.io/fullchain.pem; # managed by Certbot
+    # ssl_certificate_key /etc/letsencrypt/live/my.hintify.io/privkey.pem; # managed by Certbot
+    # include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    # ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+}

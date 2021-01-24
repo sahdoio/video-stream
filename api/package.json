@@ -1,0 +1,20 @@
+{
+  "name": "jwe-encrypter",
+  "version": "0.0.6",
+  "description": "Simple nodejs jwe encrypter/decrypter.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "./server/start.js",
+    "test": "ha ha, no."
+  },
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "express": "4.17.1",
+    "node-webtokens": "^1.0.4"
+  }
+}

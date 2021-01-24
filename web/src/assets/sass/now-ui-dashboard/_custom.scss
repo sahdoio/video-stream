@@ -1,0 +1,29 @@
+.swal2-container {
+    z-index: 5000 !important;
+}
+
+.dropify-wrapper .dropify-message p {
+    font-size: 25px !important;
+}
+
+.modalReadOnly {
+    .modal-dialog {
+        max-width: 990px !important;
+    }
+}
+
+.spanInitialDt {
+    padding: 5px 10px;
+    background-color: rgb(0, 137, 228);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;;
+}
+
+.spanEndDt {
+    padding: 5px 10px;
+    background-color: rgb(235, 172, 0);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+}
