@@ -8,10 +8,10 @@ const app = express()
 app.use(bodyParser.json())
 app.disable('x-powered-by')
 
-const jwe_routes = require('./routes/jwe_routes')
+const test_routes = require('./routes/test_routes')
 
 app.use('/', [
-  jwe_routes
+  test_routes
 ])
 
 module.exports = app

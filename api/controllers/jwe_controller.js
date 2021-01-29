@@ -7,8 +7,8 @@ const key = "82a645babc5cd41c9a2cb4d0d3ba17ad"
 
 const jweEncrypt = (req, res, next) => {
     const payload = req.body.payload
-    const jweAlgorithm = 'dir'   
-    const jweEncryption = 'A128CBC-HS256'   
+    const jweAlgorithm = 'dir'
+    const jweEncryption = 'A128CBC-HS256'
     const token = jwt.generate(jweAlgorithm, jweEncryption, payload, getKey(key))
 
     return res.json({
