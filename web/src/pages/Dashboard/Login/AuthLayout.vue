@@ -3,7 +3,7 @@
     <navbar :show-navbar="showMenu">
       <template slot="navbar-menu">
         <li class="nav-item">
-          <a class="nav-link" href="http://www.multidisplayfin.com">
+          <a class="nav-link" href="https://www.mdftechnology.com.br/">
             <i class="now-ui-icons location_world"></i>
             Website
           </a>
@@ -101,8 +101,8 @@
   }
 
   .wrapper {
-    background: -webkit-gradient(linear, left top, right top, from(#851E9E), color-stop(60%, #6C099D), to(#50009D));
-    background: linear-gradient(to right, #851E9E 0%, #6C099D 60%, #50009D 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#173047), color-stop(60%, #436381), to(#011629));
+    background: linear-gradient(to right, #173047 0%, #436381 60%, #011629 100%);
     height: 1600px;
     overflow: hidden;
   }

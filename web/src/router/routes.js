@@ -1,26 +1,27 @@
-import DashboardLayout from 'src/pages/Dashboard/Layout/DashboardLayout.vue';
-import AuthLayout from 'src/pages/Dashboard/Login/AuthLayout.vue';
+import DashboardLayout from 'src/pages/Dashboard/Layout/DashboardLayout.vue'
+import AuthLayout from 'src/pages/Dashboard/Login/AuthLayout.vue'
 
 // GeneralViews
-import NotFound from 'src/pages/GeneralViews/NotFoundPage.vue';
+import NotFound from 'src/pages/GeneralViews/NotFoundPage.vue'
 
 // Page Headers
-const DashboardHeader = () => import('src/pages/Dashboard/Dashboard/DashboardHeader.vue');
-import DefaultHeader from 'src/pages/Dashboard/DefaultHeader';
+const DashboardHeader = () => import('src/pages/Dashboard/Dashboard/DashboardHeader.vue')
+import DefaultHeader from 'src/pages/Dashboard/DefaultHeader'
 
 // Login
-const Login = () => import('src/pages/Dashboard/Login/Login.vue');
+const Login = () => import('src/pages/Dashboard/Login/Login.vue')
 
 // Dashboard Pages
-const Dashboard = () => import('src/pages/Dashboard/Dashboard/Dashboard.vue');
-const Companies = () => import('src/pages/Dashboard/Companies/Companies.vue');
-const Devices = () => import('src/pages/Dashboard/Devices/Devices.vue');
-const CompanyDevices = () => import('src/pages/Dashboard/CompanyDevices/CompanyDevices.vue');
-const Ads = () => import('src/pages/Dashboard/Ads/Ads.vue');
-const AdsManagement= () => import('src/pages/Dashboard/AdsManagement/AdsManagement.vue');
-const Language = () => import('src/pages/Dashboard/Language/Language.vue');
-const Profile = () => import('src/pages/Dashboard/Profile/Profile.vue');
-const Menus = () => import('src/pages/Dashboard/Menus/Menus.vue');
+const Dashboard = () => import('src/pages/Dashboard/Dashboard/Dashboard.vue')
+const Room = () => import('src/pages/Dashboard/Rooms/Room.vue')
+const Companies = () => import('src/pages/Dashboard/Companies/Companies.vue')
+const Devices = () => import('src/pages/Dashboard/Devices/Devices.vue')
+const CompanyDevices = () => import('src/pages/Dashboard/CompanyDevices/CompanyDevices.vue')
+const Ads = () => import('src/pages/Dashboard/Ads/Ads.vue')
+const AdsManagement= () => import('src/pages/Dashboard/AdsManagement/AdsManagement.vue')
+const Language = () => import('src/pages/Dashboard/Language/Language.vue')
+const Profile = () => import('src/pages/Dashboard/Profile/Profile.vue')
+const Menus = () => import('src/pages/Dashboard/Menus/Menus.vue')
 
 let authPages = {
     path: '/',
@@ -33,7 +34,7 @@ let authPages = {
             component: Login
         }
     ]
-};
+}
 
 let mainPages = {
     path: '/',
@@ -49,6 +50,15 @@ let mainPages = {
             header: DefaultHeader
         }
     },
+        {
+            path: 'rooms',
+            name: 'rooms',
+            meta: {title: 'Sala'},
+            components: {
+                default: Room,
+                header: DefaultHeader
+            }
+        },
         {
             path: 'companies',
             name: 'companies',
@@ -120,9 +130,9 @@ let mainPages = {
                 default: Menus,
                 header: DefaultHeader
             }
-        }
+        }       
     ]
-};
+}
 
 const routes = [{
     path: '/',
@@ -135,6 +145,6 @@ const routes = [{
         path: '*',
         component: NotFound
     }
-];
+]
 
-export default routes;
+export default routes

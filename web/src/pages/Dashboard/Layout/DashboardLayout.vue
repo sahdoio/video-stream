@@ -6,12 +6,11 @@
         <user-menu></user-menu>
         <h2 class="sidebar-group-title">Principal</h2>
         <sidebar-item :link="{name: 'Dashboard', icon: 'now-ui-icons design_app', path: '/dashboard'}"></sidebar-item>
-        <h2 class="sidebar-group-title">Cadastros</h2>
-        <sidebar-item :link="{name: 'Dispositivos', icon: 'now-ui-icons tech_tablet', path: '/devices'}"></sidebar-item>
-        <sidebar-item :link="{name: 'Empresas', icon: 'now-ui-icons business_briefcase-24', path: '/companies'}"></sidebar-item>
-        <sidebar-item :link="{name: 'Menus', icon: 'now-ui-icons design_bullet-list-67', path: '/menus'}"></sidebar-item>
-        <h2 class="sidebar-group-title">Publicidade</h2>
-        <sidebar-item :link="{name: 'Publicidades', icon: 'now-ui-icons ui-2_like', path: '/ads'}"></sidebar-item>
+        <h2 class="sidebar-group-title">Transmissão</h2>        
+        <sidebar-item :link="{name: 'Salas', icon: 'now-ui-icons design-2_ruler-pencil', path: '/rooms'}"></sidebar-item>  
+        <sidebar-item :link="{name: 'Dispositivos', icon: 'now-ui-icons tech_tablet', path: '/devices'}"></sidebar-item>  
+        <h2 class="sidebar-group-title">Configurações</h2>
+        <sidebar-item :link="{name: 'Sair', icon: 'now-ui-icons media-1_button-power', path: '/logout'}"></sidebar-item>  
       </template>
     </side-bar>
     <div class="main-panel">

@@ -4,7 +4,7 @@
             <card class="card-login card-plain">
                 <div slot="header">
                     <div class="logo-container">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo_1.png" alt="">
                     </div>
                 </div>
 
@@ -97,8 +97,8 @@
       },
       logInFake() {
         if (
-          this.model.email == 'admin@mdftechnology.com.br' &&
-          this.model.password == 'password123'
+          this.model.email == 'admin' &&
+          this.model.password == '123456'
         ) {
           var data = {
             logged: true,
@@ -138,7 +138,7 @@
     }
 
     .login-page .card-login .logo-container {
-        width: 250px;
+        width: 90px;
         margin: 0 auto;
         margin-bottom: 15px;
     }

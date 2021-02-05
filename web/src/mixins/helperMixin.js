@@ -80,6 +80,18 @@ export default {
       var [{ value: month },,{ value: day },,{ value: year }] = dateTimeFormat .formatToParts(date );
       return (`${day}/${month}/${year }`);
     },
+    async loadScript(source) {
+      return new Promise((resolve, reject) => {
+        let script = document.createElement('script')
+        script.async = true
+        script.src = source
+        document.head.appendChild(script)
+
+        script.onload = () => {
+          resolve()
+        }
+      })
+    },
     httpCheckStatus(response, redirectRoute = 'dashboard') {
       console.log('[helperMixin][httpCheckStatus] response: ', response);
 
