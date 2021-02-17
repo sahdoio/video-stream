@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import router from './router/router';
 import DashboardPlugin from './dashboard-plugin';
+import io from 'socket.io-client';
 
 // Plugins
 import App from './App.vue';
@@ -41,6 +42,21 @@ import 'vue-select/dist/vue-select.css';
 // draggable
 import draggable from 'vuedraggable'
 Vue.component('Draggable', draggable);
+
+/**
+ * Socket Area
+ */
+let socket = null;
+
+/** Socket IO Client - Store in Vuex State for use in components */
+if (process.env.NODE_ENV === 'development') {
+    socket = io(process.env.VUE_APP_API);   
+} else {
+    socket = io('/');
+}
+// End socket area
+
+store.dispatch('assignSocket', socket);
 
 // bus
 Vue.prototype.$eventBus = new Vue();

@@ -23,7 +23,7 @@ app.use('/', [
 
 const stream = require('./services/stream_service')
 
-stream.start('192.168.1.134', '9991', 'admin', '202013js')
-stream.start('192.168.1.140', '9992', 'admin', '202013js')
+stream.start('192.168.1.132', '9991', 'admin', '202013js')
+stream.start('192.168.1.139', '9992', 'admin', '202013js')
 
 module.exports = app
