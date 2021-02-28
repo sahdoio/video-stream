@@ -4,7 +4,7 @@
       <div class="col-md-12 m-auto">
         <card>
           <div slot="header" class="text-center">
-            <h1>SALA DE AULA</h1>
+            <!-- <h1>SALA DE AULA</h1> -->
           </div>
           <!-- <rstp-area></rstp-area> -->
           <meet-area></meet-area>

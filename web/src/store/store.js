@@ -7,11 +7,6 @@ export default new Vuex.Store({
   state: {
     socket: null
   },
-  actions: {
-    assignSocket: (context, payload) => {
-      context.commit('ASSIGN_SOCKET', payload)
-    }
-  },
   getters: {
     getSocket: state => state.socket
   },
@@ -19,5 +14,10 @@ export default new Vuex.Store({
     ASSIGN_SOCKET: (state, payload) => {
       state.socket = payload
     }
-  }
+  },
+  actions: {
+    assignSocket: (context, payload) => {
+      context.commit('ASSIGN_SOCKET', payload)
+    }
+  }  
 });

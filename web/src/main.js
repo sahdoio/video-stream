@@ -47,16 +47,15 @@ Vue.component('Draggable', draggable);
  * Socket Area
  */
 let socket = null;
-
 /** Socket IO Client - Store in Vuex State for use in components */
 if (process.env.NODE_ENV === 'development') {
     socket = io(process.env.VUE_APP_API);   
 } else {
     socket = io('/');
 }
+store.dispatch('assignSocket', socket);
 // End socket area
 
-store.dispatch('assignSocket', socket);
 
 // bus
 Vue.prototype.$eventBus = new Vue();

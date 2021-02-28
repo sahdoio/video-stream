@@ -49,11 +49,20 @@ let mainPages = {
             default: Dashboard,
             header: DefaultHeader
         }
-    },
+    },       
         {
             path: 'rooms',
             name: 'rooms',
             meta: {title: 'Sala'},
+            components: {
+                default: Room,
+                header: DefaultHeader
+            }
+        },
+        {
+            path: 'rooms/:room_id',
+            name: 'room',
+            meta: {title: 'Sala de Aula'},
             components: {
                 default: Room,
                 header: DefaultHeader
