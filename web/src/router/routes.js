@@ -13,6 +13,7 @@ const Login = () => import('src/pages/Dashboard/Login/Login.vue')
 
 // Dashboard Pages
 const Dashboard = () => import('src/pages/Dashboard/Dashboard/Dashboard.vue')
+const Rooms = () => import('src/pages/Dashboard/Rooms/Rooms.vue')
 const Room = () => import('src/pages/Dashboard/Rooms/Room.vue')
 const Companies = () => import('src/pages/Dashboard/Companies/Companies.vue')
 const Devices = () => import('src/pages/Dashboard/Devices/Devices.vue')
@@ -53,9 +54,9 @@ let mainPages = {
         {
             path: 'rooms',
             name: 'rooms',
-            meta: {title: 'Sala'},
+            meta: {title: 'Salas'},
             components: {
-                default: Room,
+                default: Rooms,
                 header: DefaultHeader
             }
         },

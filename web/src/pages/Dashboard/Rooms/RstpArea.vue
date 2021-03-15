@@ -29,10 +29,10 @@ export default {
         canvas: canvas1, // Canvas should be a canvas DOM element
       });
 
-      var canvas2 = document.getElementById("videoStream2");
-      var player2 = new JSMpeg.Player("ws://localhost:9992", {
-        canvas: canvas2, // Canvas should be a canvas DOM element
-      });
+      // var canvas2 = document.getElementById("videoStream2");
+      // var player2 = new JSMpeg.Player("ws://localhost:9992", {
+      //   canvas: canvas2, // Canvas should be a canvas DOM element
+      // });
     },
   },
   mounted() {

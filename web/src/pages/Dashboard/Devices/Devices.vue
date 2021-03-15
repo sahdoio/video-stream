@@ -4,7 +4,7 @@
             <div class="col-12">
                 <card card-body-classes="table-full-width" no-footer-line>
                     <div slot="header">
-                        <h4 class="card-title">Dispositivos</h4>
+                        <h4 class="card-title">Dispositivos de Vídeo</h4>
                         <btn class="btn btn-success btn-round pull-right"
                              data-original-title="Adicionar novo dispositivo"
                              title="Adicionar novo dispositivo"
@@ -113,6 +113,7 @@
   import ModalDevices from "./ModalDevices";
 
   export default {
+    name: "Devices",
     components: {
       NPagination,
       [Select.name]: Select,

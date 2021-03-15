@@ -45,7 +45,8 @@ app.use('/peerjs', peerServer);
  * Stream Area
  */
 
-// const stream = require('./services/stream_service')
+const stream = require('./services/stream_service')
+stream.start('177.103.216.179:8181', '9991', 'admin', '202013js')
 // stream.start('192.168.1.133', '9991', 'admin', '202013js')
 // stream.start('192.168.1.140', '9992', 'admin', '202013js')
 
